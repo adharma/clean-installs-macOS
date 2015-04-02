@@ -4,5 +4,5 @@
 
 on new machine chmod +x script,
 
-run install_everything_mac.sh 
+run install_mac.sh 
 
