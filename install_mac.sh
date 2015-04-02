@@ -15,7 +15,6 @@ brew update && brew upgrade brew-cask && brew-cleanup
 
 #install cast apps
 caskapps=(
-appcleaner
 caffeine
 flux
 appcleaner
