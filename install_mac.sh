@@ -18,6 +18,8 @@ caskapps=(
 appcleaner
 caffeine
 flux
+appcleaner
+adium
 vlc
 skype
 box-sync
