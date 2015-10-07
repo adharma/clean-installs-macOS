@@ -27,11 +27,13 @@ teamviewer
 grandperspective
 google-chrome
 joinme
-microsoft-office
+iterm2
+nosleep
+virtualbox
+microsoft-office365
 spotify
 vlc
 avast
-font-source-code-pro
 )
 
 echo "installing cask apps..."
@@ -40,18 +42,11 @@ brew cask install --appdir="/Applications" ${caskapps[@]}
 echo "cleaning up brew..."
 brew cleanup
 
-
 #resets all printers
 lpstat -p | grep printer | cut -d" " -f2
 lpstat -p | grep printer | cut -d" " -f2 | xargs -I{} lpadmin -x {}
 sudo launchctl unload /System/Library/LaunchDaemons/org.cups.cupsd.plist
 sudo launchctl load /System/Library/LaunchDaemons/org.cups.cupsd.plist
-
-
-#copy wallpaper and set it
-echo "copying wallpaper..."
-# sudo cp /Volumes/stem_installer/new\ hire/stem\ 600x200-EFEFEF.png ~/Pictures/
-
 
 #turn on filevault
 echo "turning on SSD ecryption..."
