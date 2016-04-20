@@ -11,7 +11,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "installing & updating cask..."
 brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
-brew update && brew upgrade brew-cask && brew-cleanup
+brew update && brew upgrade brew-cask && brew-cleanup && brew cask cleanup
 
 #install cast apps
 caskapps=(
