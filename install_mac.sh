@@ -1,11 +1,8 @@
 #!/bin/bash
 
-echo "installing apple updates..."
-sudo softwareupdate --install --all
-
 # install brew
 echo "installing brew..."
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install cask & update brew
 echo "installing & updating cask..."
@@ -51,3 +48,6 @@ sudo launchctl load /System/Library/LaunchDaemons/org.cups.cupsd.plist
 #turn on filevault
 echo "turning on SSD ecryption..."
 sudo fdesetup enable
+
+echo "installing apple updates..."
+sudo softwareupdate --install --all
