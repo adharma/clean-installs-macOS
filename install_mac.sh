@@ -17,7 +17,6 @@ flux
 appcleaner
 adium
 vlc
-skype
 box-sync
 bettertouchtool
 teamviewer
