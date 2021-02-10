@@ -2,16 +2,17 @@
 
 # install brew
 echo "installing brew..."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install cask & update brew
-echo "installing & updating cask..."
-brew tap caskroom/cask
-brew install caskroom/cask/brew-cask
-brew update && brew upgrade brew-cask && brew-cleanup && brew cask cleanup
+# echo "installing & updating cask..."
+# brew tap caskroom/cask
+# brew install caskroom/cask/brew-cask
+# brew update && brew upgrade && brew-cleanup && brew cask cleanup
 
 #install cast apps
-caskapps=(
+apps=(
 # caffeine
 # flux
 # appcleaner
@@ -21,6 +22,10 @@ caskapps=(
 # teamviewer
 # grandperspective
 google-chrome
+zoom
+slack
+1password
+viscosity
 # joinme
 # iterm2
 # nosleep
@@ -31,8 +36,8 @@ google-chrome
 # avast
 )
 
-echo "installing cask apps..."
-brew cask install --appdir="/Applications" ${caskapps[@]}
+echo "installing apps..."
+brew install --appdir="/Applications" ${apps[@]}
 
 echo "cleaning up brew..."
 brew cleanup
