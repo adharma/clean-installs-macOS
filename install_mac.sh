@@ -45,12 +45,12 @@ fi
 
 
 # ask admin if they need MS office installed
-echo "do they need MS Office (non-eng does) enter y/n?"
+echo "do they need MS Office? non-eng will need it! enter y if they are non-eng?"
 read answer
 if [ $answer == "y" ]; then
 	brew install microsoft-office
 fi
-	echo "got it, not installing MS Office...."
+	echo "got it, not installing MS Office, must be an #eng..."
 
 #install other apps
 apps=(
@@ -67,7 +67,7 @@ brew install --appdir="/Applications" ${apps[@]}
 echo "cleaning up brew..."
 brew cleanup
 
-#turn on filevault
+# turn on filevault - not necessary with MDM that enforce it
 # echo "turning on SSD ecryption..."
 # sudo fdesetup enable
 
