@@ -43,35 +43,22 @@ fi
 
 # exit $exitcode
 
-# install cask & update brew
-# echo "installing & updating cask..."
-# brew tap caskroom/cask
-# brew install caskroom/cask/brew-cask
-# brew update && brew upgrade && brew-cleanup && brew cask cleanup
 
-#install apps
+# ask admin if they need MS office installed
+echo "do they need MS Office (non-eng does) enter y/n?"
+read answer
+if [ $answer == "y" ]; then
+	brew install microsoft-office
+fi
+	echo "got it, not installing MS Office...."
+
+#install other apps
 apps=(
-# caffeine
-# flux
-# appcleaner
-# adium
-# box-sync
-# bettertouchtool
-# teamviewer
-# grandperspective
 google-chrome
 zoom
 slack
 1password
 viscosity
-# joinme
-# iterm2
-# nosleep
-# virtualbox
-# microsoft-office
-# spotify
-# vlc
-# avast
 )
 
 echo "installing apps..."
@@ -80,15 +67,13 @@ brew install --appdir="/Applications" ${apps[@]}
 echo "cleaning up brew..."
 brew cleanup
 
-#resets all printers
-# lpstat -p | grep printer | cut -d" " -f2
-# lpstat -p | grep printer | cut -d" " -f2 | xargs -I{} lpadmin -x {}
-# sudo launchctl unload /System/Library/LaunchDaemons/org.cups.cupsd.plist
-# sudo launchctl load /System/Library/LaunchDaemons/org.cups.cupsd.plist
-
 #turn on filevault
 # echo "turning on SSD ecryption..."
 # sudo fdesetup enable
 
-echo "installing apple updates..."
+# remove default macOS apps that typically need updates. iMovie, Keynote, Pages, Numbers.
+sudo rm -rf /Applications/Pages.app /Applications/Keynote.app /Applications/GarageBand.app /Applications/iMovie.app /Applications/Numbers.app
+
+# install all macOS updates.
+echo "installing macOS updates..."
 sudo softwareupdate --install --all
