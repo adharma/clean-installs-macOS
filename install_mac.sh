@@ -77,3 +77,6 @@ sudo rm -rf /Applications/Pages.app /Applications/Keynote.app /Applications/Gara
 # install all macOS updates.
 echo "installing macOS updates..."
 sudo softwareupdate --install --all
+
+
+# https://cloud.malwarebytes.com/download?t=51Y584horavYYucI4J4rA5G7njJ9pXzEOQAlEnc3RMW5Fep0xo1B2XaVLo8O5aAgvYKMn3q0SRpJkCfHgyjK_0BHLkShL5UIz5pqxG6e7DDT&via=copy&source=Downloads%20Page
