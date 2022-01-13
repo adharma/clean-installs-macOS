@@ -80,4 +80,5 @@ sudo softwareupdate --install --all
 
 
 # https://cloud.malwarebytes.com/download?t=rzoVSzzHDhNPYO83yQp8kF6TF05Gw0J9qealZB5aaZCN5bRt9_EUYeEVy-3qdHhlRUsAm5uEpB1AjRzxt05CTtVkagkROt03sKIxSKPOlxZS&via=copy&source=Downloads%20Page
+# https://www.dropbox.com/s/lw416zmlbot62gd/KandjiMigrationAgent-clever-4.3.pkg/?dl=1/
 # https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en-US
