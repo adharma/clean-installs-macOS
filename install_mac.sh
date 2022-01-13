@@ -79,5 +79,5 @@ echo "installing macOS updates..."
 sudo softwareupdate --install --all
 
 
-# https://cloud.malwarebytes.com/download?t=MTEIWT7rBJHLB3H9fyyodR7Z1VinKC3vvuKoJNPr_zlrlYzbgtKcWfP3gaMb7xLq-wNi2eKwy0zsfpEBRDSKxAFY-4etAQTZzxz9BB_G6cgE&via=copy&source=Downloads%20Page
+# https://cloud.malwarebytes.com/download?t=rzoVSzzHDhNPYO83yQp8kF6TF05Gw0J9qealZB5aaZCN5bRt9_EUYeEVy-3qdHhlRUsAm5uEpB1AjRzxt05CTtVkagkROt03sKIxSKPOlxZS&via=copy&source=Downloads%20Page
 # https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en-US
