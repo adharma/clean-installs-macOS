@@ -79,7 +79,5 @@ echo "installing macOS updates..."
 sudo softwareupdate --install --all
 
 
-# https://cloud.malwarebytes.com/download?t=NWbgfwMb0MUjLVaC75EUF8Xe-ojUVeG24r2gPOXR2xhLsWl6N2v24xkzzvF57A02W2Bh9p6zVhx-6nKUfqBrGxv_g5eoz7r7Dn0yw3zqklFt&via=copy&source=Downloads%20Page
-# https://www.dropbox.com/s/lw416zmlbot62gd/KandjiMigrationAgent-clever-4.3.pkg/?dl=1/
-# https://www.dropbox.com/s/s56xvmd8nyzs1yd/FleetsmithRemoval-Jan-05-2022-04-35-27-81-PM.sh?dl=0
+# https://cloud.malwarebytes.com/download?t=AKRG4IQy7KbmNkczB2yTohtRAJMBl9YHe_SzZdPatfUxn3SngyAlDCh7kgdBGDsJhQGinOnKJG6wu6-3o_IuHOvk_5tkwqhfps8VhWynf8qQ&via=copy&source=Downloads%20Page
 # https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en-US
